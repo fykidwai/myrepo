@@ -101,7 +101,7 @@
 	</target>
 
 	<target name="reload" description="Reload application in Tomcat">
-		<reload url="${tomcat.manager.url}" username="${tomcat.manager.username}" password="${tomcat.manager.password}" path="/html/${name}" />
+		<reload url="${tomcat.manager.url}/html" username="${tomcat.manager.username}" password="${tomcat.manager.password}" path="/${name}" />
 	</target>
 
 	<target name="start" description="Start Tomcat application">
