@@ -103,7 +103,7 @@
                  username="${tomcat.manager.username}"
                  password="${tomcat.manager.password}"
                  path="/${name}"
-                 war="${name}"/>
+                 war="${name}.war"/>
     </target>
 
     <target name="reload" description="Reload application in Tomcat">
