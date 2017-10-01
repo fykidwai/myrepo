@@ -39,7 +39,12 @@
 		<echo message="" />
 	</target>
 
-	<target name="build" description="Compile main source tree java files">
+	<target name="clean" description="Clean build directorty">
+		<delete dir="${build.dir}" failonerror="false" />
+		<delete file="${basedir}/${name}.war" failonerror="false" />
+	</target>
+
+	<target name="build" depends="clean" description="Compile main source tree java files">
 		<mkdir dir="${build.dir}" />
 		<javac destdir="${build.dir}" debug="true" deprecation="false" optimize="false" failonerror="true">
 			<src path="${src.dir}" />
@@ -66,6 +71,7 @@
 				<include name="*.war" />
 			</fileset>
 		</copy>
+		<antcall target="clean" />
 	</target>
 
 	<!-- ============================================================== -->
