@@ -31,8 +31,8 @@
 		<property name="driverClass" value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl"
 			value="jdbc:mysql://vpc1dbinstance.ctrtpzixvzcg.us-east-1.rds.amazonaws.com:3306/web_customer_tracker?useSSL=false" />
-		<property name="user" value="springstudent" />
-		<property name="password" value="springstudent" />
+		<property name="user" value="vpc1user" />
+		<property name="password" value="vpc1user" />
 
 		<!-- these are connection pool properties for C3P0 -->
 		<property name="minPoolSize" value="2" />
